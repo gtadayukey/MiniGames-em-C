@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
 			printf("\nPrograma encerrado!\n");
 			break;
 		}else{
-			printf("\nDigite apenas os numeros das aÁıes correspondentes!\n\n\n");
+			printf("\nDigite apenas os numeros das a√ß√µes correspondentes!\n\n\n");
 		}
 	}
 	
@@ -52,14 +52,14 @@ void rodar_cobra_caixa(){
 	int inicia_jogando, iniciar_jogo;
 	
 	printf("\n\n\n<<<<< COBRA NA CAIXA >>>>>\n");
-	printf("VocÍ e seu colega de trabalho estavam explorando a tumba do faraÛ Neebe quando \nentraram em uma grande sala com escrituras na parede. Enquanto inspecionavam as \nescrituras, vocÍs acidentalmente pressionaram um bot„o escondido que lacrou as \nportas, prendendo-os l· dentro.\n\n");
-	printf("Ent„o, cinco caixas apareceram no centro da sala, uma \ndelas contendo o bot„o para abrir as portas, mas uma delas contÈm uma cobra mortal!\n\n");
-	printf("VocÍs devem jogar alternando entre turnos para abrir uma caixa de cada vez, na esperanÁa de n„o \nencontrar a cobra.\n\n");
-	printf("Esse È um jogo de sorte, onde ganha o jogador que descobrir a caixa que contÈm o \nbot„o e perde aquele que descobrir a caixa com a cobra.\n\n");
+	printf("Voc√™ e seu colega de trabalho estavam explorando a tumba do fara√≥ Neebe quando \nentraram em uma grande sala com escrituras na parede. Enquanto inspecionavam as \nescrituras, voc√™s acidentalmente pressionaram um bot√£o escondido que lacrou as \nportas, prendendo-os l√° dentro.\n\n");
+	printf("Ent√£o, cinco caixas apareceram no centro da sala, uma \ndelas contendo o bot√£o para abrir as portas, mas uma delas cont√©m uma cobra mortal!\n\n");
+	printf("Voc√™s devem jogar alternando entre turnos para abrir uma caixa de cada vez, na esperan√ßa de n√£o \nencontrar a cobra.\n\n");
+	printf("Esse √© um jogo de sorte, onde ganha o jogador que descobrir a caixa que cont√©m o \nbot√£o e perde aquele que descobrir a caixa com a cobra.\n\n");
 	
 	printf("Deseja jogar esse jogo?\n");
 	printf("1 - Sim\n");
-	printf("2 - N„o\n");
+	printf("2 - N√£o\n");
 	
 	scanf("%d", &iniciar_jogo);
 	fflush(stdin);
@@ -103,7 +103,6 @@ void jogo_cobra_caixa(char primeiro_jogador[15], char segundo_jogador[15]){
 		botao = rand() % 5;
 	}
 	
-	printf("\n\nA caixa da cobra È %d\n\n", cobra);
 	caixas[cobra] = 1;
 	caixas[botao] = 2;
 	
@@ -162,13 +161,13 @@ void jogo_cobra_caixa(char primeiro_jogador[15], char segundo_jogador[15]){
 void valorant_quiz(){
     int pontuacao = 0, iniciar_jogo;
     printf("\n\n\n<<<<< VALORANT QUIZ >>>>>\n");
-    printf("O jogo de perguntas e respostas de Valorant È um jogo interativo que desafia os jogadores a testarem seus conhecimentos\n");
-    printf("sobre o jogo Valorant. … ideal para jogadores que querem aprimorar suas habilidades e conhecer melhor o universo do jogo\n");
-    printf("O jogo È composto por 5 perguntas e no final tem uma pontuaÁ„o, tente acertar o maximo!\n\n");
+    printf("O jogo de perguntas e respostas de Valorant √© um jogo interativo que desafia os jogadores a testarem seus conhecimentos\n");
+    printf("sobre o jogo Valorant. √â ideal para jogadores que querem aprimorar suas habilidades e conhecer melhor o universo do jogo\n");
+    printf("O jogo √© composto por 5 perguntas e no final tem uma pontua√ß√£o, tente acertar o maximo!\n\n");
 
     printf("Deseja jogar esse jogo?\n");
 	printf("1 - Sim\n");
-	printf("2 - N„o\n");
+	printf("2 - N√£o\n");
 	
 	scanf("%d", &iniciar_jogo);
 	fflush(stdin);
@@ -190,7 +189,7 @@ void valorant_quiz(){
 }
 
 int p1(int pontuacao){
-    char pergunta[100] = "Quando Valorant foi lanÁado?";
+    char pergunta[100] = "Quando Valorant foi lan√ßado?";
     char opcao0[100] = "2 de junho de 2020",
     opcao1[100] = "4 de novembro de 2020", 
     opcao2[100] = "11 de julho de 2020", 
@@ -208,7 +207,7 @@ int p1(int pontuacao){
     fflush(stdin);
     while (resposta_usuario < 0 || resposta_usuario > 3)
     {
-        printf("OpÁ„o inv·lida!\nDigite novamente:\n");
+        printf("Op√ß√£o inv√°lida!\nDigite novamente:\n");
         scanf("%d", &resposta_usuario);
         fflush(stdin);
     }
@@ -244,7 +243,7 @@ int p2(int pontuacao){
     fflush(stdin);
     while (resposta_usuario < 0 || resposta_usuario > 3)
     {
-        printf("OpÁ„o inv·lida!\nDigite novamente:\n");
+        printf("Op√ß√£o inv√°lida!\nDigite novamente:\n");
         scanf("%d", &resposta_usuario);
         fflush(stdin);
     }
@@ -280,7 +279,7 @@ int p3(int pontuacao){
     fflush(stdin);
     while (resposta_usuario < 0 || resposta_usuario > 3)
     {
-        printf("OpÁ„o inv·lida!\nDigite novamente:\n");
+        printf("Op√ß√£o inv√°lida!\nDigite novamente:\n");
         scanf("%d", &resposta_usuario);
         fflush(stdin);
     }
@@ -298,7 +297,7 @@ int p3(int pontuacao){
 }
 
 int p4(int pontuacao){
-    char pergunta[100] = "\nQual È o ˙nico casal do Valorant?";
+    char pergunta[100] = "\nQual √© o √∫nico casal do Valorant?";
     char opcao0[100] = "Jett e Fenix",
     opcao1[100] = "Skye e Yoru", 
     opcao2[100] = "Raze e Killjoy", 
@@ -316,7 +315,7 @@ int p4(int pontuacao){
     fflush(stdin);
     while (resposta_usuario < 0 || resposta_usuario > 3)
     {
-        printf("OpÁ„o inv·lida!\nDigite novamente:\n");
+        printf("Op√ß√£o inv√°lida!\nDigite novamente:\n");
         scanf("%d", &resposta_usuario);
         fflush(stdin);
     }
@@ -334,7 +333,7 @@ int p4(int pontuacao){
 }
 
 int p5(int pontuacao){
-    char pergunta[100] = "\nQual È o tipo de Agente que È feito para abrir o bomb?";
+    char pergunta[100] = "\nQual √© o tipo de Agente que √© feito para abrir o bomb?";
     char opcao0[100] = "Sentinela",
     opcao1[100] = "Duelista", 
     opcao2[100] = "Controlador", 
@@ -352,7 +351,7 @@ int p5(int pontuacao){
     fflush(stdin);
     while (resposta_usuario < 0 || resposta_usuario > 3)
     {
-        printf("OpÁ„o inv·lida!\nDigite novamente:\n");
+        printf("Op√ß√£o inv√°lida!\nDigite novamente:\n");
         scanf("%d", &resposta_usuario);
         fflush(stdin);
     }
