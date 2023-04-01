@@ -16,9 +16,9 @@ int p5();
 int main(int argc, char *argv[]) {
 	setlocale(LC_ALL, "Portuguese");
 	
-	int escolha_usuario, status_jogo = 1;
+	int escolha_usuario;
 
-	while(status_jogo == 1){
+	while(1){
 		
 		
 		printf("\n<<<<< MINI GAMES >>>>>\n\n");
@@ -95,7 +95,7 @@ void rodar_cobra_caixa(){
 
 void jogo_cobra_caixa(char primeiro_jogador[15], char segundo_jogador[15]){
 	
-	int cobra = 0, botao = 0, escolha, status_jogo = 1, jogada = 1, vencedor;
+	int cobra = 0, botao = 0, escolha, jogada = 1, vencedor;
 	int caixas[5] = {0, 0, 0, 0, 0};
 	
 	while(cobra == botao){
