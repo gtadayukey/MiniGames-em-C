@@ -49,13 +49,27 @@ int main(int argc, char *argv[]) {
 
 void rodar_cobra_caixa(){
 	char jogador1[N], jogador2[15];
-	int inicia_jogando;
+	int inicia_jogando, iniciar_jogo;
 	
 	printf("\n\n\n<<<<< COBRA NA CAIXA >>>>>\n");
 	printf("Você e seu colega de trabalho estavam explorando a tumba do faraó Neebe quando \nentraram em uma grande sala com escrituras na parede. Enquanto inspecionavam as \nescrituras, vocês acidentalmente pressionaram um botão escondido que lacrou as \nportas, prendendo-os lá dentro.\n\n");
 	printf("Então, cinco caixas apareceram no centro da sala, uma \ndelas contendo o botão para abrir as portas, mas uma delas contém uma cobra mortal!\n\n");
 	printf("Vocês devem jogar alternando entre turnos para abrir uma caixa de cada vez, na esperança de não \nencontrar a cobra.\n\n");
 	printf("Esse é um jogo de sorte, onde ganha o jogador que descobrir a caixa que contém o \nbotão e perde aquele que descobrir a caixa com a cobra.\n\n");
+	
+	printf("Deseja jogar esse jogo?\n");
+	printf("1 - Sim\n");
+	printf("2 - Não\n");
+	
+	scanf("%d", &iniciar_jogo);
+	fflush(stdin);
+	
+	if(iniciar_jogo == 2){
+		return;
+	}else if(iniciar_jogo != 1){
+		printf("\nDigite apenas os numeros das escolhas!\n\n");
+		return rodar_cobra_caixa();
+	}
 	
 	printf("Digite seu primeiro nome Jogador 1: ");
 	scanf("%s", jogador1);
@@ -146,8 +160,26 @@ void jogo_cobra_caixa(char primeiro_jogador[15], char segundo_jogador[15]){
 }
 
 void valorant_quiz(){
-    int pontuacao = 0;
+    int pontuacao = 0, iniciar_jogo;
     printf("\n\n\n<<<<< VALORANT QUIZ >>>>>\n");
+    printf("O jogo de perguntas e respostas de Valorant é um jogo interativo que desafia os jogadores a testarem seus conhecimentos\n");
+    printf("sobre o jogo Valorant. É ideal para jogadores que querem aprimorar suas habilidades e conhecer melhor o universo do jogo\n");
+    printf("O jogo é composto por 5 perguntas e no final tem uma pontuação, tente acertar o maximo!\n\n");
+
+    printf("Deseja jogar esse jogo?\n");
+	printf("1 - Sim\n");
+	printf("2 - Não\n");
+	
+	scanf("%d", &iniciar_jogo);
+	fflush(stdin);
+	
+	if(iniciar_jogo == 2){
+		return;
+	}else if(iniciar_jogo != 1){
+		printf("\nDigite apenas os numeros das escolhas!\n\n");
+		return valorant_quiz();
+	}
+	
     pontuacao = p1(pontuacao);
     pontuacao = p2(pontuacao);
     pontuacao = p3(pontuacao);
